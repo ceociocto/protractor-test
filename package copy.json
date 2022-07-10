@@ -1,0 +1,22 @@
+{
+  "name": "protractor-min-code",
+  "version": "1.0.0",
+  "description": "A sample working protractor project with minimum code required",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npm-force-resolutions",
+    "before-test": "webdriver-manager clean && webdriver-manager update --gecko false --standalone false",
+    "test": "tsc && protractor temp/config.js"
+  },
+  "author": "Jacek Góraj <jckgrj@gmail.com>",
+  "license": "MIT",
+  "resolutions": {
+    "selenium-webdriver": "^4.3.0"
+  },
+  "dependencies": {
+    "@types/jasmine": "2.5.45",
+    "@types/node": "^10.12.18",
+    "protractor": "^5.4.1",
+    "typescript": "^3.2.1"
+  }
+}
